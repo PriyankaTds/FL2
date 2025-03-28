@@ -1,0 +1,53 @@
+2025-03-25 06:28:35,482 - DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+2025-03-25 06:28:35,483 - Starting Flower server, config: num_rounds=3, no round_timeout
+2025-03-25 06:28:35,491 - Flower ECE: gRPC server running (3 rounds), SSL is disabled
+2025-03-25 06:28:35,491 - [INIT]
+2025-03-25 06:28:35,491 - Requesting initial parameters from one random client
+2025-03-25 06:29:37,836 - Received initial parameters from one random client
+2025-03-25 06:29:37,836 - Starting evaluation of initial global parameters
+2025-03-25 06:29:37,836 - Evaluation returned no results (`None`)
+2025-03-25 06:29:37,836 - 
+2025-03-25 06:29:37,836 - [ROUND 1]
+2025-03-25 06:29:43,357 - configure_fit: strategy sampled 4 clients (out of 4)
+2025-03-25 06:37:09,893 - aggregate_fit: received 4 results and 0 failures
+2025-03-25 06:37:10,839 - configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-03-25 06:37:59,812 - aggregate_evaluate: received 4 results and 0 failures
+2025-03-25 06:37:59,812 - 
+2025-03-25 06:37:59,812 - [ROUND 2]
+2025-03-25 06:37:59,813 - configure_fit: strategy sampled 4 clients (out of 4)
+2025-03-25 06:45:31,265 - aggregate_fit: received 4 results and 0 failures
+2025-03-25 06:45:32,213 - configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-03-25 06:46:19,267 - aggregate_evaluate: received 4 results and 0 failures
+2025-03-25 06:46:19,268 - 
+2025-03-25 06:46:19,268 - [ROUND 3]
+2025-03-25 06:46:19,268 - configure_fit: strategy sampled 4 clients (out of 4)
+2025-03-25 06:53:38,953 - aggregate_fit: received 4 results and 0 failures
+2025-03-25 06:53:39,703 - configure_evaluate: strategy sampled 4 clients (out of 4)
+2025-03-25 06:54:26,057 - aggregate_evaluate: received 4 results and 0 failures
+2025-03-25 06:54:26,141 - 
+2025-03-25 06:54:26,141 - [SUMMARY]
+2025-03-25 06:54:26,141 - Run finished 3 round(s) in 1488.22s
+2025-03-25 06:54:26,141 - 	History (loss, distributed):
+2025-03-25 06:54:26,141 - 		round 1: 0.3278520032763481
+2025-03-25 06:54:26,141 - 		round 2: 0.29010288417339325
+2025-03-25 06:54:26,141 - 		round 3: 0.2997521460056305
+2025-03-25 06:54:26,142 - 	History (metrics, distributed, fit):
+2025-03-25 06:54:26,142 - 	{'accuracy': [(1, 0.7538571428571429),
+2025-03-25 06:54:26,142 - 	              (2, 0.8767142857142857),
+2025-03-25 06:54:26,142 - 	              (3, 0.9147142857142857)]}
+2025-03-25 06:54:26,142 - 	History (metrics, distributed, evaluate):
+2025-03-25 06:54:26,142 - 	{'accuracy': [(1, 0.8725), (2, 0.8825), (3, 0.8845)]}
+2025-03-25 06:54:26,142 - 
